@@ -12,7 +12,31 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  padding: 8px;
+  margin: 16px;
+  justify-content: space-between;
+  align-items: center;
 }
+
+/* My solution */
+.start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.end {
+  display: flex;
+  justify-items: flex-end;
+}
+
+/* TOP solution 
+.start .end {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+*/
 
 .profile-image {
   background: rebeccapurple;
@@ -41,8 +65,17 @@ a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  /* My solution
+  margin: 8px;
+  */
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  /* not included in my original solution */
+  gap: 16px;
+  margin-left: 8px;
+  align-items: center;
 }
